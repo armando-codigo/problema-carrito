@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main>
+      <form action="/" id="create-option">
+        <div>
+          <label for="nombre-producto"
+            >Nombre
+            <input
+              type="text"
+              placeholder="Nombre producto"
+              name="nombre-producto"
+              id="nombre-producto"
+              value="producto"
+            />
+          </label>
+        </div>
+        <div>
+          <label for="categoria-producto"
+            >Categoría
+            <select name="categoria-producto" id="select-categoria">
+              <option value="tacos" id="select-categoria">tacos</option>
+              <option value="sopa" id="select-categoria">sopa</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label for="precio-producto">Precio
+            <input
+              type="number"
+              placeholder="0"
+              name="precio-producto"
+              id="precio-producto"
+            />
+          </label>
+        </div>
+        <button type="submit button">Enviar</button>
+      </form>
+      <div class="contenedor"></div>
+      <div class="carrito">
+        <table>
+            <thead>
+                <td>Imagen</td>
+                <td>Nombre</td>
+                <td>Cantidad</td>
+            </thead>
+            <tbody></tbody>
+        </table>
+      </div>
+    </main>
+    <script src="/app.js"></script>
+    <script src="/carrito.js"></script>
+  </body>
+</html>
